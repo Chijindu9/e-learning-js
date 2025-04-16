@@ -1,11 +1,88 @@
+
+/* App.css */
+
+*{
+  box-sizing: border-box;
+  transition: all 05s ease-in-out;
+}
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+body{
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+  margin-left: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+button{
+  border: 1px solid #00aaff;
+  background-color: #00aaff;
+  color: #fff;
+  padding: .7rem 1rem;
+  cursor: pointer;
+  border-radius: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+.main-form, .course-card{
+  max-width: 300px;
+  box-shadow: 2px 4px 12px #00000088;
+  padding: 1.5rem .75rem;
+  border-radius: 10px;
+}
+.input-box{
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: .5rem 0;
+}
+.signup-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 60vh; */
+}
+
+.courses-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+}
+#enroll-course{
+  /* display: block; */
+  margin-left: 10px;
+}
+
+.list li:has(input:checked) label::before{
+  content: "✅";
+  font-size: .75rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00aaff;
+}
+
+.list li:has(input:checked) label:hover::before{
+  /* content: "✅";
+  font-size: .75rem;
+  font-weight: bold;
+  color: hsl(200, 100%, 90%); */
+  background-color: hsl(200, 100%, 30%);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

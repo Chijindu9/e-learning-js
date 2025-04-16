@@ -1,14 +1,23 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const CourseCard = ({ title, instructor, price, image }) => {
+const CourseCard = ({ title, instructor, price, /*image*/ }) => {
   return (
-    <div className="course-card">
-      <img src={image} alt={title} />
+    <motion.div 
+    className="course-card"
+    whileHover={{ scale: 1.05 }}
+    >
+    <div className="course-image">
+      {/* Placeholder for course image */}
+    </div>
+    <div className="course-details">
+      {/* <img src={image} alt={title} /> */}
       <h3>{title}</h3>
       <p>By {instructor}</p>
       <span>${price}</span>
-      <button id="enroll-course">Enroll Now</button>
+      <button>Enroll Now</button>
     </div>
+  </motion.div>
   );
 };
 

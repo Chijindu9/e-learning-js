@@ -1,37 +1,61 @@
+// src/pages/Courses.js
 import React from 'react';
-import { useFetch } from '../hooks/useFetch'; // Custom hook for API calls
+import { useFetch } from '../hooks/useFetch';
 import CourseCard from '../components/CourseCard';
-
+import { motion } from 'framer-motion';
 
 const Courses = () => {
-  const { data: courses, loading, error } = useFetch('/api/courses');
-//   const courses = [
-//     { id: 1, title: "React Basics", instructor: "GabbyTech", price: 29.99 },
-//     { id: 2, title: "Advanced JS", instructor: "Jane Doe", price: 39.99 }
-//   ];
+  // Get courses from useFetch (true = use mock data)
+  const { data: courses, loading, error } = useFetch('/api/courses', true);
+
+  // Animation variants for cleaner code
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
 
   return (
-    <div>
+    <div className="courses-container">
       <h1>All Courses</h1>
-      <div className="course-section">
-        {loading ? (
-            <p>Loading...</p>
-        ) : error ? (
-            <p>Error loading courses.</p>
-        ) : !courses || courses.length === 0 ? (
-            <p>No courses available.</p>
-        ) : (
-            <div className="courses-list">
-            {courses.map(course => (
-                <CourseCard key={course.id} {...course} />
-            ))}
-            </div>
-        )}
-      </div>
       
+      {loading ? (
+        <div className="loading-spinner">Loading courses...</div>
+      ) : error ? (
+        <div className="error-message">
+          Error loading courses: {error.message}
+        </div>
+      ) : courses.length === 0 ? (
+        <div className="empty-state">No courses available</div>
+      ) : (
+        <motion.div 
+          className="courses-grid"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {courses.map((course, index) => (
+            <motion.div
+              key={course.id}
+              variants={itemVariants}
+              transition={{ delay: index * 0.1 }}
+            >
+              <CourseCard {...course} />
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
     </div>
   );
 };
 
 export default Courses;
-

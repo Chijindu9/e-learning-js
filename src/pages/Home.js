@@ -1,5 +1,5 @@
 import React from 'react';
-import CourseCard from '../components/CourseCard';
+// import CourseCard from '../components/CourseCard';
 import HeroSection from '../components/HeroSection';
 
 
@@ -8,12 +8,12 @@ const Home = () => {
     <div>
       <HeroSection />
       <div className="course-grid">
-        <CourseCard 
+        {/* <CourseCard 
           title="React for Beginners" 
           instructor="GabbyTech" 
           price="29.99" 
           image="/assets/react-course.jpg" 
-        />
+        /> */}
         {/* Add more courses */}
       </div>
     </div>
@@ -21,3 +21,4 @@ const Home = () => {
 };
 
 export default Home;
+

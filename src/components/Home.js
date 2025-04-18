@@ -1,6 +1,6 @@
 import React from 'react';
 // import CourseCard from '../components/CourseCard';
-import HeroSection from '../components/HeroSection';
+import HeroSection from './HeroSection';
 
 
 const Home = () => {
@@ -21,4 +21,3 @@ const Home = () => {
 };
 
 export default Home;
-

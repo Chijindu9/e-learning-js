@@ -1,17 +1,24 @@
+
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import AppRoutes from './AppRoutes';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ExploreDropdown from './components/ExploreDropdown';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
         <Navbar />
         <AppRoutes />
-      </Router>
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+

@@ -10,7 +10,7 @@ import Testimonials from './components/Testimonials';
 import TrendingCourses from './components/TrendingCourses';
 import WhyChooseUs from './components/WhyChooseUs';
 import CertificationPrograms from './components/CertificationPrograms';
-import ExploreDropdown from './components/ExploreDropdown';
+// import ExploreDropdown from './components/ExploreDropdown';
 import Footer from './components/Footer';   
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         <TrendingCourses />
         <WhyChooseUs />
         <CertificationPrograms />
-        <ExploreDropdown />
+        {/* <ExploreDropdown /> */}
         <Footer />
       </div>
     </Router>

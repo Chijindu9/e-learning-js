@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../styles/TrendingCourses.css';
 
@@ -43,6 +42,26 @@ const TopCourses = () => {
       students: 450,
       price: 59.99,
       image: 'leather-course.jpg'
+    },
+    {
+      id: 5,
+      title: 'Fashion Pattern Making',
+      category: 'Fashion Design',
+      instructor: 'Emily Chen',
+      rating: 4.8,
+      students: 380,
+      price: 49.99,
+      image: 'pattern-making.jpg'
+    },
+    {
+      id: 6,
+      title: 'JAMB Complete Prep',
+      category: 'Exam Preparation',
+      instructor: 'Edenites Academy',
+      rating: 4.9,
+      students: 2100,
+      price: 39.99,
+      image: 'jamb-prep.jpg'
     }
   ];
 
@@ -70,7 +89,7 @@ const TopCourses = () => {
             </div>
           ))}
         </div>
-        <button className="view-all-btn">View All Courses</button>
+        <button className="view-all-btn cta-button primary">View All Courses</button>
       </div>
     </section>
   );

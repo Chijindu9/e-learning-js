@@ -69,7 +69,7 @@ const Navbar = () => {
           
           <div className="navbar-right navbar-auth">
             <Link to="/login" className="nav-link">Log In</Link>
-            <Link to="/signup" className="signup-btn">Join for Free</Link>
+            <Link to="/login?form=signup" className="signup-btn">Join for Free</Link>
           </div>
         </div>
       )}
@@ -104,7 +104,7 @@ const Navbar = () => {
                 <li><Link to="/courses" className="nav-link" onClick={closeMenu}>Courses</Link></li>
                 <li><Link to="/teach" className="nav-link" onClick={closeMenu}>Teach on Edenites</Link></li>
                 <li><Link to="/login" className="nav-link" onClick={closeMenu}>Log in</Link></li>
-                <li><Link to="/signup" className="signup-btn" onClick={closeMenu}>Join for Free</Link></li>
+                <li><Link to="/login" className="signup-btn" onClick={closeMenu}>Join for Free</Link></li>
               </ul>
             </div>
           )}

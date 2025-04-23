@@ -1,160 +1,161 @@
 
 :root {
-  --font-color: #fff;
-  --head-color: #036d35;
-  --primary-blue: #004C6D;
-  --primary-green: #119C4C;
-  --hover-blue: #006B99;
-  --hover-green: #17BF61;
+--font-color: #fff;
+--head-color: #036d35;
+--primary-blue: #004C6D;
+--primary-green: #119C4C;
+--hover-blue: #006B99;
+--hover-green: #17BF61;
+--box-shadow: #0000005d;
 
-  --secondary-navy: #00354F;
-  --secondary-mint: #A8E6C2;
-  --secondary-sky: #B3E5FC;
+--secondary-navy: #00354F;
+--secondary-mint: #A8E6C2;
+--secondary-sky: #B3E5FC;
 
-  --bg-default: #F9F9F9;
-  --bg-section: #ECF7F2;
-  --bg-footer: #002B40;
+--bg-default: #F9F9F9;
+--bg-section: #ECF7F2;
+--bg-footer: #002B40;
 
-  --font-primary: #2D2D2D;
-  --font-secondary: #5E5E5E;
-  --font-inverted: #F5F5F5;
+--font-primary: #2D2D2D;
+--font-secondary: #5E5E5E;
+--font-inverted: #F5F5F5;
 
-  --accent-warning: #FF9800;
-  --accent-error: #F44336;
-  --accent-success: #4CAF50;
-  --accent-info: #03A9F4;
+--accent-warning: #FF9800;
+--accent-error: #F44336;
+--accent-success: #4CAF50;
+--accent-info: #03A9F4;
 }
 
 
 *{
-  box-sizing: border-box;
-  transition: all 0.5s ease-in-out;
+box-sizing: border-box;
+transition: all 0.5s ease-in-out;
 }
 
 
 body{
-  padding: 1rem;
-  background-color: #f1f1f1;
-  color: #000;
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  font-family: 'Roboto', sans-serif;
+padding: 1rem;
+background-color: #f1f1f1;
+color: #000;
+/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+font-family: 'Roboto', sans-serif;
 }
 
 a{
-  margin-left: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
+margin-left: 15px;
+font-weight: bold;
+text-decoration: none;
+color: #000;
 }
 
 .main-form, .course-card{
-  max-width: 300px;
-  box-shadow: 2px 4px 12px #00000088;
-  padding: 1.5rem .75rem;
-  border-radius: 10px;
+max-width: 300px;
+box-shadow: 2px 4px 12px #00000088;
+padding: 1.5rem .75rem;
+border-radius: 10px;
 }
 
 /* ============= Authorization Forms ================ */
 .auth-form {
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+margin: 2rem auto;
+padding: 2rem;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .auth-form h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
+text-align: center;
+margin-bottom: 1.5rem;
 }
 
 .auth-form input {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+width: 100%;
+padding: 0.8rem;
+margin-bottom: 1rem;
+border: 1px solid #ccc;
+border-radius: 4px;
 }
 
 .auth-form button {
-  width: 100%;
-  padding: 0.8rem;
-  background: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+width: 100%;
+padding: 0.8rem;
+background: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 .auth-form button:hover {
-  background: #45a049;
+background: #45a049;
 }
 
 .auth-form p {
-  text-align: center;
-  margin-top: 1rem;
+text-align: center;
+margin-top: 1rem;
 }
 
 .input-box{
-  width: 100%;
-  padding: 0.75rem 1rem;
-  margin: .5rem 0;
+width: 100%;
+padding: 0.75rem 1rem;
+margin: .5rem 0;
 }
 .signup-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* min-height: 60vh; */
+display: flex;
+align-items: center;
+justify-content: center;
+/* min-height: 60vh; */
 }
 
 .courses-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* flex-direction: row; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+/* flex-direction: row; */
 }
 #enroll-course{
-  /* display: block; */
-  margin-left: 10px;
+/* display: block; */
+margin-left: 10px;
 }
 
 
 
 /* =========================== Courses Grid =============== */
 .courses-container {
-  padding: 2rem;
+padding: 2rem;
 }
 
 .courses-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+display: flex;
+flex-wrap: wrap;
+gap: 1.5rem;
+justify-content: center;
 }
 
 .course-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+width: 300px;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s ease;
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px #0000001a;
+transform: translateY(-5px);
+box-shadow: 0 5px 15px #0000001a;
 }
 
 
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
 }
 
 

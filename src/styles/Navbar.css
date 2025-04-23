@@ -5,7 +5,7 @@
   align-items: center;
   padding: 1rem 2rem;
   background: #fff;
-  box-shadow: 0 2px 5px #0000001a;
+  box-shadow: 0 2px 5px var(--box-shadow);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -147,9 +147,15 @@
   background: none;
   border: none;
   font-size: 1.5rem;
+  font-weight: 700;
   cursor: pointer;
   display: none;
   color: var(--font-primary);
+  border-radius: 50%;
+}
+.hamburger:hover, .close-btn:hover{
+  background-color: var(--font-primary);
+  color: var(--font-inverted);
 }
 
 .mobile-menu {
@@ -190,6 +196,8 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--font-primary);
+  border-radius: 50%;
+  font-weight: 700;
 }
 
 .mobile-search {

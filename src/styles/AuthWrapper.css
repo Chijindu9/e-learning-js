@@ -1,0 +1,98 @@
+/* AuthWrapper.css */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Signup specific styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-progress {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.progress-step.active {
+  background: var(--head-color);
+  color: white;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+/* Button states */
+.auth-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.auth-button:disabled:hover {
+  background-color: #cccccc;
+}
+
+
+
+/* AuthWrapper.css */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Remove any conflicting styles that might show both forms */
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+}

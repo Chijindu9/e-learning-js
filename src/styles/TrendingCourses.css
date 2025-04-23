@@ -18,9 +18,13 @@
   }
   
   .course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+    column-gap: 1.25rem;
+    row-gap: 1.75rem;
     margin-bottom: 2rem;
   }
   
@@ -28,7 +32,7 @@
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px var(--box-shadow);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -153,7 +157,7 @@
       grid-template-columns: 1fr;
       gap: 1.25rem;
     }
-    
+        
     .course-image {
       height: 140px;
     }

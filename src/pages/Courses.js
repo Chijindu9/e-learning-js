@@ -1,7 +1,7 @@
 // src/pages/Courses.js
 import React from 'react';
 import { useFetch } from '../hooks/useFetch';
-import CourseCard from '../components/CourseCard';
+import CourseCard from '../components/Dashboard/CourseCard';
 import { motion } from 'framer-motion';
 
 const Courses = () => {

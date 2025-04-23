@@ -10,7 +10,7 @@ const TopCourses = () => {
       instructor: 'John Doe',
       rating: 4.8,
       students: 1200,
-      price: 99.99,
+      price: 22499.99,
       image: 'aws-course.jpg'
     },
     {
@@ -20,8 +20,8 @@ const TopCourses = () => {
       instructor: 'Jane Smith',
       rating: 4.9,
       students: 850,
-      price: 79.99,
-      image: 'react-course.jpg'
+      price: 2499.99,
+      image: '/digital.webp'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const TopCourses = () => {
       instructor: 'Mike Johnson',
       rating: 4.7,
       students: 1500,
-      price: 89.99,
+      price: 1999.99,
       image: 'data-science-course.jpg'
     },
     {
@@ -40,7 +40,7 @@ const TopCourses = () => {
       instructor: 'Sarah Williams',
       rating: 4.9,
       students: 450,
-      price: 59.99,
+      price: 8450.50,
       image: 'leather-course.jpg'
     },
     {
@@ -50,7 +50,7 @@ const TopCourses = () => {
       instructor: 'Emily Chen',
       rating: 4.8,
       students: 380,
-      price: 49.99,
+      price: 9500.00,
       image: 'pattern-making.jpg'
     },
     {
@@ -60,7 +60,7 @@ const TopCourses = () => {
       instructor: 'Edenites Academy',
       rating: 4.9,
       students: 2100,
-      price: 39.99,
+      price: 7499.99,
       image: 'jamb-prep.jpg'
     }
   ];
@@ -73,7 +73,7 @@ const TopCourses = () => {
           {courses.map(course => (
             <div key={course.id} className="course-card">
               <div className="course-image">
-                <img src={`/images/${course.image}`} alt={course.title} />
+                <img src={`../assets/${course.image}`} alt={course.title} />
               </div>
               <div className="course-details">
                 <span className="course-category">{course.category}</span>
@@ -83,7 +83,7 @@ const TopCourses = () => {
                   <span className="rating">⭐ {course.rating}</span>
                   <span className="students">👥 {course.students.toLocaleString()}</span>
                 </div>
-                <div className="course-price">${course.price}</div>
+                <div className="course-price"> ₦{course.price}</div>
                 <button className="enroll-btn">Enroll Now</button>
               </div>
             </div>

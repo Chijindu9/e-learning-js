@@ -22,7 +22,7 @@
   
   .course-image {
     width: 80px;
-    height: 60px;
+    height: 70px;
     border-radius: 4px;
     overflow: hidden;
   }
@@ -151,7 +151,7 @@
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #000000b3;
     color: white;
     padding: 0.2rem 0.5rem;
     border-radius: 4px;

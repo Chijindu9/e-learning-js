@@ -10,7 +10,7 @@ const TopCourses = () => {
       instructor: 'John Doe',
       rating: 4.8,
       students: 1200,
-      price: '22,499.99',
+      price: 5,
       image: '../image/AWS.png'
     },
     {
@@ -20,7 +20,7 @@ const TopCourses = () => {
       instructor: 'Jane Smith',
       rating: 4.9,
       students: 850,
-      price: '2,499.99',
+      price: 5,
       image: '../image/React pic.webp'
     },
     {
@@ -30,7 +30,7 @@ const TopCourses = () => {
       instructor: 'Mike Johnson',
       rating: 4.7,
       students: 1500,
-      price: '1,999.99',
+      price: 5,
       image: '../image/Data Science.webp'
     },
     {
@@ -40,7 +40,7 @@ const TopCourses = () => {
       instructor: 'Adeline Kaycee',
       rating: 4.9,
       students: 450,
-      price: '8,450.50',
+      price: 5,
       image: '../image/Leather Crafting.png'
     },
     {
@@ -50,7 +50,7 @@ const TopCourses = () => {
       instructor: 'Chiamaka Onwe',
       rating: 4.8,
       students: 380,
-      price: '9,500.00',
+      price: 5,
       image: '../image/Python.webp'
     },
     {
@@ -60,7 +60,7 @@ const TopCourses = () => {
       instructor: 'Edenites Academy',
       rating: 4.9,
       students: 2100,
-      price: '7,499.99',
+      price: 5,
       image: '../image/JAMB_4.png'
     }
   ];
@@ -83,7 +83,7 @@ const TopCourses = () => {
                   <span className="rating">⭐ {course.rating}</span>
                   <span className="students">👥 {course.students.toLocaleString()}</span>
                 </div>
-                <div className="course-price"> ₦{course.price}</div>
+                <div className="course-price"> ${course.price}</div>
                 <button className="enroll-btn">Enroll Now</button>
               </div>
             </div>

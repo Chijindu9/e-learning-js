@@ -15,8 +15,7 @@ const HeroSection = () => {
           <p>Explore our courses and start learning today!</p>
           <div className="hero-cta">
             
-            <Link to="/login" className="cta-button primary">Start 7-day Free Trial</Link>
-            {/* <Link to="/signup" className="cta-button primary">Start 7-day Free Trial</Link> */}
+            <Link to="/login?form=signup" className="cta-button primary">Start 7-day Free Trial</Link>
             <Link to="/courses" className="cta-button secondary">Explore Courses</Link>
           </div>
         </div>

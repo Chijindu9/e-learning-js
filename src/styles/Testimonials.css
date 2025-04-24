@@ -1,6 +1,6 @@
 /* Testimonials Section */
 .testimonials {
-    padding: 5rem 0;
+    padding: 1rem 0;
     background-color: var(--bg-section);
   }
   
@@ -47,6 +47,7 @@
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
   }
   
   .testimonial-header h4 {

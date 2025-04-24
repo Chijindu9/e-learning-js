@@ -10,8 +10,8 @@ const TopCourses = () => {
       instructor: 'John Doe',
       rating: 4.8,
       students: 1200,
-      price: 22499.99,
-      image: 'aws-course.jpg'
+      price: '22,499.99',
+      image: '../image/AWS.png'
     },
     {
       id: 2,
@@ -20,8 +20,8 @@ const TopCourses = () => {
       instructor: 'Jane Smith',
       rating: 4.9,
       students: 850,
-      price: 2499.99,
-      image: '/digital.webp'
+      price: '2,499.99',
+      image: '../image/React pic.webp'
     },
     {
       id: 3,
@@ -30,28 +30,28 @@ const TopCourses = () => {
       instructor: 'Mike Johnson',
       rating: 4.7,
       students: 1500,
-      price: 1999.99,
-      image: 'data-science-course.jpg'
+      price: '1,999.99',
+      image: '../image/Data Science.webp'
     },
     {
       id: 4,
       title: 'Leather Crafting Basics',
       category: 'Creative Arts',
-      instructor: 'Sarah Williams',
+      instructor: 'Adeline Kaycee',
       rating: 4.9,
       students: 450,
-      price: 8450.50,
-      image: 'leather-course.jpg'
+      price: '8,450.50',
+      image: '../image/Leather Crafting.png'
     },
     {
       id: 5,
       title: 'Fashion Pattern Making',
       category: 'Fashion Design',
-      instructor: 'Emily Chen',
+      instructor: 'Chiamaka Onwe',
       rating: 4.8,
       students: 380,
-      price: 9500.00,
-      image: 'pattern-making.jpg'
+      price: '9,500.00',
+      image: '../image/Python.webp'
     },
     {
       id: 6,
@@ -60,8 +60,8 @@ const TopCourses = () => {
       instructor: 'Edenites Academy',
       rating: 4.9,
       students: 2100,
-      price: 7499.99,
-      image: 'jamb-prep.jpg'
+      price: '7,499.99',
+      image: '../image/JAMB_4.png'
     }
   ];
 
@@ -73,7 +73,7 @@ const TopCourses = () => {
           {courses.map(course => (
             <div key={course.id} className="course-card">
               <div className="course-image">
-                <img src={`../assets/${course.image}`} alt={course.title} />
+                <img src={`${course.image}`} alt={course.title} />
               </div>
               <div className="course-details">
                 <span className="course-category">{course.category}</span>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 import { getEnrolledCourses } from '../../services/courseService';
 import './styles/DashboardComponents.css';
 

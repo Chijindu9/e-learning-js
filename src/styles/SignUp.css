@@ -4,7 +4,9 @@
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
-    background: white;
+    background: #ededed;
+    background-size: cover;
+    background-position: center;
     border-radius: 12px;
     box-shadow: 0 4px 20px var(--box-shadow);
   }
@@ -36,12 +38,12 @@
     background: #e0e0e0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: #666;
     font-weight: 600;
     position: relative;
     z-index: 2;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   
   .progress-step.active {
@@ -89,13 +91,13 @@
   .form-group input:focus {
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    box-shadow: 0 0 0 2px #4caf5033;
   }
   
   .form-step {
     opacity: 0;
     height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: opacity 0.5s ease, transform 0.5s ease;
     transform: translateX(20px);
   }
@@ -172,9 +174,10 @@
     height: 18px;
   }
   
-  .form-checkbox label {
-    color: #7f8c8d;
+  .privacy-acceptance {
+    color:  #2c3e50;
     font-size: 0.9rem;
+    font-weight: 600;
   }
   
   .form-footer {

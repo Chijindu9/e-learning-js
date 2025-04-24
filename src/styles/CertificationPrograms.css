@@ -1,6 +1,6 @@
 /* Certification Programs Section */
 .certification-programs {
-    padding: 5rem 0;
+    padding: 1rem 0;
     background-color: var(--bg-section);
   }
   
@@ -13,7 +13,7 @@
   .certification-programs h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--head-color);
   }
   

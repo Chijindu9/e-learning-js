@@ -1,6 +1,6 @@
 /* Our Mission Section */
 .our-mission {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background-color: #f9f9f9;
   }
   
@@ -10,7 +10,7 @@
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
   
   .mission-content {
@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
   }
   
@@ -50,13 +50,13 @@
     padding: 1.5rem;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px var(--box-shadow);
     min-width: 0; /* Prevent flex item overflow */
   }
   
   .stat-number {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
@@ -136,6 +136,10 @@
     }
   
     .stat-number {
-      font-size: 1.75rem;
+      font-size: .8rem;
+    }
+
+    .stat-label {
+      font-size: .4rem;
     }
   }

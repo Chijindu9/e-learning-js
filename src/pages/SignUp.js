@@ -132,7 +132,7 @@ const SignUp = ({ onSwitch }) => {
               onChange={handleChange}
               required
             />
-            <label>
+            <label className="privacy-acceptance">
               I accept Edenites Academy's Terms of Use and Privacy Notice
             </label>
           </div>

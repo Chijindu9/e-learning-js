@@ -6,25 +6,25 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Michael Johnson',
+      name: 'Henry Ifeanyi',
       role: 'Software Developer',
-      avatar: 'avatar1.jpg',
+      avatar: '../image/hgfh.jpg',
       quote: 'Edenites Academy transformed my career. The AWS certification course helped me land my dream job at Amazon!',
       rating: 5
     },
     {
       id: 2,
-      name: 'Sarah Williams',
+      name: 'Chinaza Miracle O',
       role: 'Fashion Designer',
-      avatar: 'avatar2.jpg',
+      avatar: '../image/LOV_2447.jpg',
       quote: 'The leather crafting courses are exceptional. I started my own business after completing just two courses!',
       rating: 5
     },
     {
       id: 3,
-      name: 'David Brown',
+      name: 'Clara Ede-Nwegede',
       role: 'Data Analyst',
-      avatar: 'avatar3.jpg',
+      avatar: '../image/LOV_2332.jpg',
       quote: 'The data science curriculum is comprehensive and practical. I applied what I learned immediately at work.',
       rating: 4
     }
@@ -38,7 +38,7 @@ const Testimonials = () => {
           {testimonials.map(testimonial => (
             <div key={testimonial.id} className="testimonial-card">
               <div className="testimonial-header">
-                <img src={`/images/avatars/${testimonial.avatar}`} alt={testimonial.name} />
+                <img src={`../assets/${testimonial.avatar}`} alt={testimonial.name} />
                 <div>
                   <h4>{testimonial.name}</h4>
                   <p>{testimonial.role}</p>

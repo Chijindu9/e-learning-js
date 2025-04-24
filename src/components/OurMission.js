@@ -16,15 +16,15 @@ const OurMission = () => {
           </p>
           <div className="mission-stats">
             <div className="stat-item">
-              <span className="stat-number">10,000+</span>
+              <span className="stat-number">1,000+</span>
               <span className="stat-label">Students Enrolled</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">400+</span>
               <span className="stat-label">Courses Available</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">200+</span>
+              <span className="stat-number">150+</span>
               <span className="stat-label">Expert Instructors</span>
             </div>
           </div>

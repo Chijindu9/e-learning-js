@@ -10,12 +10,12 @@ export const useFetch = (url, useMockData = false) => {
 
   // Mock data can be moved to a separate file if needed
   const mockCourses = [
-    { id: 1, title: "React Basics", instructor: "GabbyTech", price: 59.99 },
-    { id: 2, title: "Python", instructor: "Emmanuel Chibuzor", price: 39.99 },
-    { id: 3, title: "Machine Learning", instructor: "Strongcode", price: 89.99 },
-    { id: 4, title: "Advanced JS", instructor: "Johncode", price: 49.99 },
-    { id: 5, title: "Computer Basics", instructor: "Judec", price: 33.99 },
-    { id: 6, title: "Data Analysis", instructor: "Chiamaka Eze", price: 34.99 },
+    { id: 1, title: "React Basics", instructor: "GabbyTech", price: 899.99 },
+    { id: 2, title: "Python", instructor: "Emmanuel Chibuzor", price: `6,459.93` },
+    { id: 3, title: "Machine Learning", instructor: "Strongcode", price: `4,289.29` },
+    { id: 4, title: "Advanced JS", instructor: "Johncode", price: `2,459.19` },
+    { id: 5, title: "Computer Basics", instructor: "Judec", price: 999.99 },
+    { id: 6, title: "Data Analysis", instructor: "Chiamaka Eze", price: `2,134.99` },
   ];
 
   useEffect(() => {

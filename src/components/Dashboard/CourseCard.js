@@ -14,7 +14,7 @@ const CourseCard = ({ title, instructor, price, /*image*/ }) => {
       {/* <img src={image} alt={title} /> */}
       <h3>{title}</h3>
       <p>By {instructor}</p>
-      <span>${price}</span>
+      <span>₦ {price}</span>
       <button>Enroll Now</button>
     </div>
   </motion.div>

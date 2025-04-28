@@ -1,52 +1,48 @@
-
 :root {
---font-color: #fff;
---head-color: #036d35;
---primary-blue: #004C6D;
---primary-green: #119C4C;
---hover-blue: #006B99;
---hover-green: #17BF61;
---box-shadow: #0000005d;
-
---secondary-navy: #00354F;
---secondary-mint: #A8E6C2;
---secondary-sky: #B3E5FC;
-
---bg-default: #F9F9F9;
---bg-section: #ECF7F2;
---bg-footer: #002B40;
-
---font-primary: #2D2D2D;
---font-secondary: #5E5E5E;
---font-inverted: #F5F5F5;
-
---accent-warning: #FF9800;
---accent-error: #F44336;
---accent-success: #4CAF50;
---accent-info: #03A9F4;
-}
-
-
-*{
-box-sizing: border-box;
-transition: all 0.5s ease-in-out;
-}
-
-
-body{
-padding: 1rem;
-background-color: #f1f1f1;
-color: #000;
-/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-font-family: 'Roboto', sans-serif;
-}
-
-a{
-margin-left: 15px;
-font-weight: bold;
-text-decoration: none;
-color: #000;
-}
+    --font-color: #fff;
+    --head-color: #036d35;
+    --primary-blue: #004C6D;
+    --primary-green: #119C4C;
+    --hover-blue: #006B99;
+    --hover-green: #17BF61;
+    --box-shadow: #0000005d;
+  
+    --secondary-navy: #00354F;
+    --secondary-mint: #A8E6C2;
+    --secondary-sky: #B3E5FC;
+  
+    --bg-default: #F9F9F9;
+    --bg-section: #ECF7F2;
+    --bg-footer: #002B40;
+  
+    --font-primary: #2D2D2D;
+    --font-secondary: #5E5E5E;
+    --font-inverted: #F5F5F5;
+  
+    --accent-warning: #FF9800;
+    --accent-error: #F44336;
+    --accent-success: #4CAF50;
+    --accent-info: #03A9F4;
+  }
+  
+  * {
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f1f1f1;
+    color: var(--font-primary);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit color naturally from parent unless styled differently */
+    font-weight: bold;
+  }
+  
 
 .main-form, .course-card{
 max-width: 300px;
@@ -92,17 +88,6 @@ transition: transform 0.3s ease;
 .course-card:hover {
 transform: translateY(-5px);
 box-shadow: 0 5px 15px #0000001a;
-}
-
-
-
-@keyframes App-logo-spin {
-from {
-transform: rotate(0deg);
-}
-to {
-transform: rotate(360deg);
-}
 }
 
 

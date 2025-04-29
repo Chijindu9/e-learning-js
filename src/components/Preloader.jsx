@@ -21,13 +21,14 @@ const PreloaderWrapper = styled.div`
 const Logo = styled.img`
   width: 80px;
   height: 80px;
-  animation: ${spin} 2s linear infinite;
+  border-radius: 50%;
+  animation: ${spin} 5s linear infinite;
   margin-bottom: 1rem;
 `;
 
 const LoadingText = styled.div`
   font-size: 1.2rem;
-  color: var(--primary-blue);
+  color: var(--head-color);
 `;
 
 const Preloader = () => {

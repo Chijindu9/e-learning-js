@@ -270,7 +270,6 @@ const ViewAllLink = styled(Link)`
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
   width: fit-content;

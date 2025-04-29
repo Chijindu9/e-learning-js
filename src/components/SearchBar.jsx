@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaTimes } from 'react-icons/fa'; // Importing icons
-import { HiMenu } from 'react-icons/hi'; // For hamburger menu
+import { FaTimes } from 'react-icons/fa';
+import { HiMenu } from 'react-icons/hi';
 import ExploreDropdown from './ExploreDropdown';
+import SearchBar from './SearchBar'; // Import the SearchBar component
 import logo from '../assets/e-favicon2.png';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState('');
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,12 +32,6 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log('Searching for:', searchQuery);
-    // You can add navigation logic here similar to SearchBar.jsx
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -53,18 +47,8 @@ const Navbar = () => {
           
           <Link to="/careers" className="nav-link">Careers</Link>
           
-          <form className="navbar-search" onSubmit={handleSearch}>
-            <input
-              type="text"
-              placeholder="What do you want to learn?"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-            <button type="submit" className="search-button" aria-label="Search">
-              <FaSearch className="search-icon" />
-            </button>
-          </form>
-
+          <SearchBar /> {/* Using SearchBar component */}
+          
           <div className="navbar-links">
             <Link to="/courses" className="nav-link">Courses</Link>
             <Link to="/teach" className="nav-link">Teach With Us</Link>
@@ -95,17 +79,7 @@ const Navbar = () => {
                 </li>
                 <li><Link to="/careers" className="nav-link" onClick={closeMenu}>Careers</Link></li>
                 <li>
-                  <form className="mobile-search" onSubmit={handleSearch}>
-                    <input
-                      type="text"
-                      placeholder="What do you want to learn?"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                    />
-                    <button type="submit" className="mobile-search-button" aria-label="Search">
-                      <FaSearch className="search-icon" />
-                    </button>
-                  </form>
+                  <SearchBar isMobile={true} /> {/* Mobile version of SearchBar */}
                 </li>
                 <li><Link to="/courses" className="nav-link" onClick={closeMenu}>Courses</Link></li>
                 <li><Link to="/teach" className="nav-link" onClick={closeMenu}>Teach on Edenites</Link></li>

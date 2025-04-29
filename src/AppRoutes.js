@@ -12,6 +12,7 @@ import JAMBPage from './components/JAMBPage';
 import WAECPage from './components/WAECPage';
 import NECOPage from './components/NECOPage';
 import ThankYou from './components/ThankYou';
+import InstructorGuidelines from './components/InstructorGuidelines';
 
 
 const AppRoutes = () => {
@@ -19,6 +20,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/careers" element={<Career />} />
+      <Route path="/instructor-guidelines" element={<InstructorGuidelines />} />
       <Route path="/careers/contact" element={<HRcontactForm />} />
       <Route path="/careers/apply/:id" element={<CareerApplication />} />
       <Route path="/thank-you" element={<ThankYou />} />

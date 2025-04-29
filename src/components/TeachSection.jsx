@@ -47,7 +47,7 @@ const Section = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  color: var(--primary-blue);
+  color: var(--primary-green);
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid var(--bg-section);
@@ -74,7 +74,7 @@ const BenefitCard = styled.div`
 `;
 
 const BenefitTitle = styled.h3`
-  color: var(--primary-blue);
+  color: var(--head-color);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ const DomainItem = styled.li`
 
   &::before {
     content: "•";
-    color: var(--primary-blue);
+    color: var(--head-color);
     font-size: 1.5rem;
     position: absolute;
     left: 0;
@@ -136,7 +136,7 @@ const StepCard = styled.div`
 const StepNumber = styled.div`
   width: 40px;
   height: 40px;
-  background: var(--primary-blue);
+  background: var(--head-color);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -179,7 +179,6 @@ const PrimaryButton = styled(Link)`
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 1rem;
-  
   background: var(--head-color);
   color: var(--font-color);
   border: none;
@@ -202,7 +201,6 @@ const SecondaryButton = styled(Link)`
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 0 1rem;
-  
   background: var(--font-color);
   color: var(--head-color);
   border: 1px solid var(--head-color);
@@ -237,7 +235,7 @@ const Quote = styled.blockquote`
   text-align: center;
   margin: 2rem 0;
   padding: 1rem;
-  border-left: 4px solid var(--primary-blue);
+  border-left: 4px solid var(--head-color);
   background: #f9f9f9;
 `;
 
@@ -378,7 +376,7 @@ const TeachWithUs = () => {
       </Quote>
 
       <CTAWrapper>
-        <PrimaryButton to="/careers/apply" variant="primary">Apply to Teach</PrimaryButton>
+        <PrimaryButton to="/careers" variant="primary">Apply to Teach</PrimaryButton>
         <SecondaryButton to="/instructor-guidelines" variant="secondary">Instructor Guidelines</SecondaryButton>
       </CTAWrapper>
 

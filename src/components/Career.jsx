@@ -44,7 +44,7 @@ const HeroText = styled.p`
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
-  color: var(--primary-blue);
+  color: var(--head-color);
   margin: 1rem 0 2rem;
   text-align: center;
 
@@ -76,7 +76,7 @@ const CareerCard = styled.div`
 `;
 
 const CareerTitle = styled.h3`
-  color: var(--primary-blue);
+  color: var(--head-color);
   margin-bottom: 0.5rem;
 `;
 
@@ -98,6 +98,7 @@ const ApplyButton = styled(Link)`
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
   margin-top: 1rem;
 
   &:hover {
@@ -108,7 +109,7 @@ const ApplyButton = styled(Link)`
 `;
 
 const BenefitsSection = styled.section`
-  background: var(--bg-section);
+  background: var(--font-color);
   padding: 2rem;
   border-radius: 8px;
   margin: 4rem 0;
@@ -194,7 +195,7 @@ const CareersPage = () => {
       </BenefitsSection>
 
       <section style={{ textAlign: 'center', marginTop: '2rem' }}>
-        <h3 style={{ color: 'var(--primary-blue)', marginBottom: '1rem' }}>Can't find your perfect role?</h3>
+        <h3 style={{ color: 'var(--head-color)', marginBottom: '1rem' }}>Can't find your perfect role?</h3>
         <p style={{ marginBottom: '1.5rem' }}>We're always looking for talented individuals to join our team.</p>
         <ApplyButton to="/careers/contact">Contact Our HR Team</ApplyButton>
       </section>
